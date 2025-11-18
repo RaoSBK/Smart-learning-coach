@@ -8,6 +8,9 @@ from agents.summarizer_agent import SummarizerAgent
 from tools.youtube_tool import YouTubeTranscriptTool
 from tools.pdf_exporter import PDFExporter
 from memory.memory_bank import MemoryBank
+from agents.flashcard_agent import FlashcardAgent
+from agents.quiz_agent import QuizAgent
+
 
 
 def main():
@@ -45,6 +48,22 @@ def main():
     filename = PDFExporter.export_summary_to_pdf(summary, metadata, "youtube_summary.pdf")
 
     print(f"\n📄 PDF exported successfully: {filename}")
+
+
+    # ======================
+    # FLASHCARDS
+    # ======================
+    flashcards = FlashcardAgent(memory).generate_flashcards(summary)
+    flashcard_pdf = PDFExporter.export_flashcards_to_pdf(flashcards, "flashcards.pdf")
+    print(f"📘 Flashcards exported: {flashcard_pdf}")
+
+    # ======================
+    # QUIZ (MCQs)
+    # ======================
+    quiz = QuizAgent(memory).generate_quiz(summary, num_questions=5)
+    quiz_pdf = PDFExporter.export_quiz_to_pdf(quiz, "quiz.pdf")
+    print(f"📝 Quiz exported: {quiz_pdf}")
+
 
 
 

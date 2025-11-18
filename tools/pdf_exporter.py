@@ -9,7 +9,7 @@ class PDFExporter:
     @staticmethod
     def export_summary_to_pdf(summary_json: dict, metadata: dict, filename="video_summary.pdf"):
         """
-        Save AI summary (JSON) + metadata into a clean PDF.
+        Save AI summary + metadata into a clean PDF.
         """
 
         c = canvas.Canvas(filename, pagesize=letter)
@@ -31,7 +31,7 @@ class PDFExporter:
         # Section function
         def draw_section(title, text, spacing=14):
             nonlocal y
-            if y < 80:  # new page
+            if y < 80:
                 c.showPage()
                 y = height - 50
 
@@ -48,28 +48,91 @@ class PDFExporter:
                 c.drawString(x, y, line)
                 y -= spacing
 
-            y -= 10  # extra spacing
+            y -= 10
 
-        # Add sections
+        # Sections
         draw_section("Short Summary:", summary_json.get("short_summary", ""))
         draw_section("Detailed Summary:", summary_json.get("detailed_summary", ""))
 
-        # Key Points
         key_points = "\n".join([f"- {kp}" for kp in summary_json.get("key_points", [])])
         draw_section("Key Points:", key_points)
 
-        # Study Notes
         study_notes = "\n".join([f"- {n}" for n in summary_json.get("study_notes", [])])
         draw_section("Study Notes:", study_notes)
 
-        # Chapters
         chapters = "\n".join([f"- {ch}" for ch in summary_json.get("chapters", [])])
         draw_section("Chapters:", chapters)
 
-        # Tags
         tags = ", ".join(summary_json.get("tags", []))
         draw_section("Tags:", tags)
 
-        # Save PDF
+        c.save()
+        return filename
+
+
+    @staticmethod
+    def export_flashcards_to_pdf(flashcard_json: dict, filename="flashcards.pdf"):
+        c = canvas.Canvas(filename, pagesize=letter)
+        width, height = letter
+
+        x = 50
+        y = height - 50
+
+        c.setFont("Helvetica-Bold", 16)
+        c.drawString(x, y, "Flashcards")
+        y -= 30
+
+        for card in flashcard_json.get("flashcards", []):
+            if y < 100:
+                c.showPage()
+                y = height - 50
+
+            c.setFont("Helvetica-Bold", 12)
+            c.drawString(x, y, f"Q: {card['question']}")
+            y -= 18
+
+            c.setFont("Helvetica", 11)
+            c.drawString(x, y, f"A: {card['answer']}")
+            y -= 25
+
+        c.save()
+        return filename
+
+
+    @staticmethod
+    def export_quiz_to_pdf(quiz_json: dict, filename="quiz.pdf"):
+        c = canvas.Canvas(filename, pagesize=letter)
+        width, height = letter
+
+        x = 50
+        y = height - 50
+
+        c.setFont("Helvetica-Bold", 16)
+        c.drawString(x, y, "Quiz")
+        y -= 30
+
+        for i, q in enumerate(quiz_json.get("quiz", []), start=1):
+
+            if y < 100:
+                c.showPage()
+                y = height - 50
+
+            c.setFont("Helvetica-Bold", 12)
+            c.drawString(x, y, f"{i}. {q['question']}")
+            y -= 18
+
+            for opt in q["options"]:
+                c.setFont("Helvetica", 11)
+                c.drawString(x, y, f"- {opt}")
+                y -= 15
+
+            c.setFont("Helvetica-Oblique", 11)
+            c.drawString(x, y, f"Answer: {q['answer']}")
+            y -= 15
+
+            c.setFont("Helvetica", 10)
+            c.drawString(x, y, f"Explanation: {q['explanation']}")
+            y -= 30
+
         c.save()
         return filename
