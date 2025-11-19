@@ -9,8 +9,7 @@ It includes:
 - 🎥 YouTube Video Summarizer  
 - 📝 Flashcards + Quiz Generator  
 - 💻 AI Coding Tutor  
-- 📄 PDF Export (Summary, Flashcards, Quiz)  
-- 🌐 Streamlit Web UI  
+- 📄 PDF Export (Summary, Flashcards, Quiz)    
 
 ---
 
@@ -72,3 +71,52 @@ Smart-Learning-Coach/
 ├── requirements.txt
 ├── .env                  # env file for API Key
 ├── README.md
+;
+```
+
+###  **Setting Up API Key**
+
+    ### ✔ 1. Go to https://aistudio.google.com
+
+    ### ✔ 1. Generate a Gemini API Key
+
+    ### ✔ 1. Create a .env file: 
+        GEMINI_API_KEY=YOUR_API_KEY_HERE
+
+---
+
+## Installation Guide
+    ### 1. Clone the project
+    git clone https://github.com/yourusername/smart-learning-coach.git
+    cd smart-learning-coach
+
+    ### 2. Create & activate virtual environment
+    python -m venv venv
+    venv\Scripts\activate        # Windows
+
+    ### 3. Install dependencies
+    pip install -r requirements.txt
+
+    ### 4. Run Streamlit App
+    streamlit run app.py
+
+---
+
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
