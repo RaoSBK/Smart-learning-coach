@@ -41,12 +41,10 @@ Exports:
 - Flashcards → `flashcards.pdf`  
 - Quiz → `quiz.pdf`  
 
-### ✔ 8. **Streamlit Web App**
-Clean UI with dropdown-based navigation.
 
 ---
 
-# 📁 Project Folder Structure
+#  Project Folder Structure
 
 ```txt
 Smart-Learning-Coach/
@@ -76,33 +74,92 @@ Smart-Learning-Coach/
 
 ###  **Setting Up API Key**
 
-    ### ✔ 1. Go to https://aistudio.google.com
+    1. Go to https://aistudio.google.com
 
-    ### ✔ 1. Generate a Gemini API Key
+    2. Generate a Gemini API Key
 
-    ### ✔ 1. Create a .env file: 
+    3.. Create a .env file: 
         GEMINI_API_KEY=YOUR_API_KEY_HERE
 
 ---
 
 ## Installation Guide
-    ### 1. Clone the project
+1. Clone the project
     git clone https://github.com/yourusername/smart-learning-coach.git
     cd smart-learning-coach
 
-    ### 2. Create & activate virtual environment
+2. Create & activate virtual environment
     python -m venv venv
     venv\Scripts\activate        # Windows
 
-    ### 3. Install dependencies
+3. Install dependencies
     pip install -r requirements.txt
 
-    ### 4. Run Streamlit App
+4. Run Streamlit App
     streamlit run app.py
 
 ---
 
-##
+## User Interface
+
+
+---
+
+## PDF Export — Examples
+    youtube_summary.pdf
+    quiz.pdf
+    flshcard.pdf
+
+---
+
+# License
+
+MIT License © 2025
+
+# Future Improvements
+- Text-to-Speech summary reading
+
+- Audio-based learning
+
+- Add NCERT / university syllabus packs
+
+- Personalized learning analytics
+
+- Deploy on cloud (Render / HuggingFace / GCP)
+
+- Add interactive coding sandbox
+
+- Add long-term learning memory system
+
+# Credits
+
+Made by Suraj Bhan
+Powered by:
+
+- Gemini 2.0 Flash
+
+- Streamlit
+
+-  Python
+
+- ReportLab
+
+- YouTube Transcript API
+
+
+#  Contact
+
+If you have any questions, suggestions, or would like to collaborate, feel free to reach out!
+
+**Developer:** Suraj  Bhan Kumar
+**Project:** Smart Learning Coach – AI Study Assistant  
+
+📧 **Email:** surajbhan20005@gmail.com  
+🐙 **GitHub:** https://github.com/RaoSBK
+🔗 **LinkedIn:** https://www.linkedin.com/in/surajbhankumar/  
+📘 **Kaggle:** https://www.kaggle.com/raosbk
+
+
 
 
 
