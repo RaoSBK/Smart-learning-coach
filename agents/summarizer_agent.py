@@ -42,7 +42,7 @@ Return ONLY JSON like this:
         # Remove markdown fences if Gemini includes them
         result_text = result_text.replace("```json", "").replace("```", "").strip()
 
-        # Try converting to JSON
+        #converting to JSON
         try:
             result_json = json.loads(result_text)
         except Exception:

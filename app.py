@@ -27,7 +27,7 @@ if API_KEY:
 MODEL = os.getenv("AGENT_MODEL", "gemini-2.0-flash")  # change if needed
 SAMPLE_IMAGE_PATH = "bg.png"  # uploaded image path
 
-# Initialize shared objects (lazily)
+# Initialize shared objects
 @st.cache_resource
 def init_agents():
     memory = MemoryBank()
@@ -52,7 +52,7 @@ def init_agents():
 agents = init_agents()
 
 st.set_page_config(page_title="Smart Learning Coach", layout="wide")
-st.title("🚀 Smart Learning Coach — Streamlit UI")
+st.title(" Smart Learning Coach — Streamlit UI")
 
 # Sidebar navigation
 st.sidebar.header("Actions")
@@ -72,7 +72,7 @@ st.sidebar.markdown("---")
 st.sidebar.image(SAMPLE_IMAGE_PATH, width=180)
 st.sidebar.markdown("Built with Gemini + Streamlit")
 
-# Utility to create downloadable bytes for a PDF file created on disk
+# creating files for downloading
 def get_file_download_link_bytes(filepath, download_name=None):
     if not os.path.exists(filepath):
         return None

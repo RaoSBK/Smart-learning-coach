@@ -53,23 +53,21 @@ def main():
     print(f"\n📄 PDF exported successfully: {filename}")
 
 
-    # ======================
+  
     # FLASHCARDS
-    # ======================
+   
     flashcards = FlashcardAgent(memory).generate_flashcards(summary)
     flashcard_pdf = PDFExporter.export_flashcards_to_pdf(flashcards, "flashcards.pdf")
     print(f"📘 Flashcards exported: {flashcard_pdf}")
 
-    # ======================
+    
     # QUIZ (MCQs)
-    # ======================
     quiz = QuizAgent(memory).generate_quiz(summary, num_questions=5)
     quiz_pdf = PDFExporter.export_quiz_to_pdf(quiz, "quiz.pdf")
     print(f"📝 Quiz exported: {quiz_pdf}")
 
-    # ===============================
+    
     # 6. Coding Tutor (Examples)
-    # ===============================
     print("\n💻 Coding Tutor:\n")
 
     # Example A: Explain code

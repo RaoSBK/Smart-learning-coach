@@ -1,4 +1,4 @@
-# agents/coding_agent.py
+#coding agent
 import google.generativeai as genai
 from typing import Optional
 
@@ -10,7 +10,7 @@ class CodingTutorAgent:
     """
 
     def __init__(self, memory: Optional[object] = None, model: str = "gemini-2.0-flash"):
-        # memory is optional so this agent won't break if your project expects memory objects
+        
         self.memory = memory
         self.model_name = model
         self.model = genai.GenerativeModel(model)
