@@ -15,27 +15,27 @@ It includes:
 
 # 🚀 Features
 
-### ✔ 1. **Study Planner**
+### 1. **Study Planner**
 Generates a personalized day-wise plan based on subjects, exam date, and daily study hours.
 
-### ✔ 2. **Concept Explainer**
+### 2. **Concept Explainer**
 Explains any topic in simple, medium, or advanced levels.
 
-### ✔ 3. **YouTube Summarizer**
+### 3. **YouTube Summarizer**
 Extracts transcript → generates summary, study notes, chapters, tags.
 
-### ✔ 4. **Flashcards Generator**
+### 4. **Flashcards Generator**
 Creates JSON-structured flashcards based on summaries.
 
-### ✔ 5. **Quiz / MCQ Generator**
+### 5. **Quiz / MCQ Generator**
 Creates exam-ready MCQs with answers & explanations.
 
-### ✔ 6. **AI Coding Tutor**
+### 6. **AI Coding Tutor**
 - Explains code  
 - Fixes debugging errors  
 - Writes code with step-by-step reasoning  
 
-### ✔ 7. **PDF Exporter**
+### 7. **PDF Exporter**
 Exports:
 - YouTube summary → `youtube_summary.pdf`  
 - Flashcards → `flashcards.pdf`  
@@ -106,15 +106,17 @@ Smart-Learning-Coach/
 ---
 
 ## PDF Export — Examples
-    youtube_summary.pdf
-    quiz.pdf
-    flshcard.pdf
+    1. youtube_summary.pdf
+    2. quiz.pdf
+    3. flshcard.pdf
 
 ---
 
 # License
 
 MIT License © 2025
+
+---
 
 # Future Improvements
 - Text-to-Speech summary reading
@@ -131,6 +133,8 @@ MIT License © 2025
 
 - Add long-term learning memory system
 
+---
+
 # Credits
 
 Made by Suraj Bhan
@@ -138,7 +142,7 @@ Powered by:
 
 - Gemini 2.0 Flash
 
-- Streamlit
+- Streamlit    
 
 -  Python
 
@@ -146,34 +150,18 @@ Powered by:
 
 - YouTube Transcript API
 
+---
 
 #  Contact
 
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out!
 
-**Developer:** Suraj  Bhan Kumar
-**Project:** Smart Learning Coach – AI Study Assistant  
+- **Developer:** Suraj  Bhan Kumar
+- **Project:** Smart Learning Coach – AI Study Assistant  
 
-📧 **Email:** surajbhan20005@gmail.com  
-🐙 **GitHub:** https://github.com/RaoSBK
-🔗 **LinkedIn:** https://www.linkedin.com/in/surajbhankumar/  
-📘 **Kaggle:** https://www.kaggle.com/raosbk
+-**Email:** surajbhan20005@gmail.com  
+-**GitHub:** https://github.com/RaoSBK
+-**LinkedIn:** https://www.linkedin.com/in/surajbhankumar/  
+-**Kaggle:** https://www.kaggle.com/raosbk
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
