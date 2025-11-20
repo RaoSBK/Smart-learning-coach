@@ -137,7 +137,7 @@ MIT License © 2025
 
 # Credits
 
-Made by Suraj Bhan
+Made by Suraj Bhan  
 Powered by:
 
 - Gemini 2.0 Flash
@@ -156,12 +156,12 @@ Powered by:
 
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out!
 
-- **Developer:** Suraj  Bhan Kumar
+- **Developer:** Suraj  Bhan Kumar  
 - **Project:** Smart Learning Coach – AI Study Assistant  
 
--**Email:** surajbhan20005@gmail.com  
--**GitHub:** https://github.com/RaoSBK   
--**LinkedIn:** https://www.linkedin.com/in/surajbhankumar/  
--**Kaggle:** https://www.kaggle.com/raosbk
+- **Email:** surajbhan20005@gmail.com  
+- **GitHub:** https://github.com/RaoSBK   
+- **LinkedIn:** https://www.linkedin.com/in/surajbhankumar/  
+- **Kaggle:** https://www.kaggle.com/raosbk
 
 ---

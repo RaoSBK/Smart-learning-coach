@@ -24,8 +24,8 @@ if API_KEY:
     genai.configure(api_key=API_KEY)
 
 # Constants
-MODEL = os.getenv("AGENT_MODEL", "gemini-2.0-flash")  # change if needed
-SAMPLE_IMAGE_PATH = "bg.png"  # uploaded image path
+MODEL = os.getenv("AGENT_MODEL", "gemini-2.0-flash")  
+SAMPLE_IMAGE_PATH = "bg.png"  
 
 # Initialize shared objects
 @st.cache_resource
@@ -52,7 +52,7 @@ def init_agents():
 agents = init_agents()
 
 st.set_page_config(page_title="Smart Learning Coach", layout="wide")
-st.title(" Smart Learning Coach — Streamlit UI")
+st.title(" Smart Learning Coach — (your personalised agent)")
 
 # Sidebar navigation
 st.sidebar.header("Actions")
@@ -70,7 +70,7 @@ page = st.sidebar.selectbox(
 
 st.sidebar.markdown("---")
 st.sidebar.image(SAMPLE_IMAGE_PATH, width=180)
-st.sidebar.markdown("Built with Gemini + Streamlit")
+st.sidebar.markdown("Built with Gemini by Suraj Bhan")
 
 # creating files for downloading
 def get_file_download_link_bytes(filepath, download_name=None):
