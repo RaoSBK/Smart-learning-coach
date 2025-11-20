@@ -160,7 +160,7 @@ If you have any questions, suggestions, or would like to collaborate, feel free 
 - **Project:** Smart Learning Coach – AI Study Assistant  
 
 -**Email:** surajbhan20005@gmail.com  
--**GitHub:** https://github.com/RaoSBK
+-**GitHub:** https://github.com/RaoSBK   
 -**LinkedIn:** https://www.linkedin.com/in/surajbhankumar/  
 -**Kaggle:** https://www.kaggle.com/raosbk
 
