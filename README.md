@@ -95,8 +95,17 @@ Smart-Learning-Coach/
 3. Install dependencies
     pip install -r requirements.txt
 
-4. Run Streamlit App
-    streamlit run app.py
+4. Install dependencies 
+    pip install youtube-transcript-api 
+
+5.  Install dependencies 
+    pip install yt-dlp  
+
+6. Install dependencies 
+    pip install reportlab 
+
+7. Run Streamlit App 
+    streamlit run app.py 
 
 ---
 
